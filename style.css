@@ -2,20 +2,83 @@
 /* yazı fontu poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
  
-* {
-    margin: 0 !important;
-    padding: 0 !important;
-    box-sizing: border-box !important;
+:root {
+    --color-yellow:#E6C744;
+    --color-gri:#C2C8DA;
 }
+
 body {
     font-family: 'Poppins', sans-serif !important;
   }
+  
+  .nav-menu {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .banner {
+    background-color:#F4F6F5;
+    border-radius: 30px;
+    z-index: -1;
+    margin-top: 20px;
+   
 
+  }
+  .banner .banner-left {
+    margin-left: 50px;
+    flex: 2;
+
+  }
+  .banner .banner-left h1 {
+    font-size: 50px;
+    position: relative;
+    z-index: 1;
+    font-weight: bold;
+  }
+  .banner .banner-left p{
+   font-size: 18px;
+   font-weight: 400;
+  }
+  .banner .banner-left .bg-white {
+    width: 250px;
+    height: 60px;
+    position: absolute;
+    top: 48px;
+    left: 30px;
+    z-index: 0;
+    transform: rotate(-1deg);
+  }
+  .banner .banner-left .bg-yellow {
+    width: 250px;
+    height: 60px;
+    background-color: var(--color-yellow);
+    position: absolute;
+    top: 170px;
+    left: 30px;
+    z-index: 0;
+    transform: rotate(-1deg);
+  }
+  .banner .banner-left .leaf img {
+    width: 120px;
+
+  }
+  .banner .banner-right {
+  
+    position: relative;
+    width: 870px;
+    flex: 1;
+  }
+  .banner .banner-right img{
+    width: 450px;
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+    
+   
+   
+  }
 
   @media (max-width:576px) {
 
-    .btn-sing {
-        display: none;
-    }
+   
 
   }
